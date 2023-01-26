@@ -1,8 +1,8 @@
-# Terra Station Wallet extension
+# Terra Station Wallet extension for Classic TestNet
 
 ![Banner](Banner.png)
 
-**Terra Station Wallet extension** is a browser extension to interact with [Terra Core](https://github.com/terra-money/core).
+**Terra Station Wallet extension** is a browser extension to interact with [Terra Classic TestNet](https://github.com/classic-terra/classic).
 
 Terra Station Wallet extension allows users to:
 
@@ -10,6 +10,7 @@ Terra Station Wallet extension allows users to:
 - View a list of transactions signed by the connected wallet.
 - Send tokens to another Terra wallet.
 - Swap currencies on the Terra network at the effective exchange rate.
+- Utilize the TestNet chain on Terra Classic
 
 ## Building Terra Station Wallet extension
 
@@ -18,8 +19,8 @@ This project was bootstrapped with [Create React App](https://create-react-app.d
 Build Terra Station Wallet extension with the following commands:
 
 ```
-git clone https://github.com/terra-money/station-extension.git
-cd station-extension
+git clone https://github.com/classic-terra/station-extension-new.git
+cd station-extension-new
 npm i
 npm run build
 ```
