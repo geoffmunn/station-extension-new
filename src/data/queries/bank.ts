@@ -57,7 +57,12 @@ export const useInitialBankBalance = () => {
   const defaultRes = {
     denom: "uluna",
     amount: "0",
-    chain: network === "classic" ? "columbus-5" : "phoenix-1",
+    chain:
+      network === "classic"
+        ? "columbus-5"
+        : "classictestnet"
+        ? "rebel-2"
+        : "phoenix-1",
   }
 
   return useQuery(

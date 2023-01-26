@@ -1,5 +1,5 @@
 import axios from "axios"
-import { ASSETS, STATION_ASSETS } from "config/constants"
+import { ASSETS, STATION_ASSETS, STATION_CHAIN } from "config/constants"
 import { WhitelistProvider, WhitelistData } from "data/queries/chains"
 import { PropsWithChildren, useEffect, useState } from "react"
 import NetworkLoading from "./NetworkLoading"
@@ -11,7 +11,7 @@ const InitChains = ({ children }: PropsWithChildren<{}>) => {
       const [whitelist, ibcDenoms, legacyWhitelist] = await Promise.all([
         (async () => {
           const { data } = await axios.get("/coins.json", {
-            baseURL: STATION_ASSETS,
+            baseURL: STATION_CHAIN,
           })
           return data
         })(),
@@ -22,8 +22,8 @@ const InitChains = ({ children }: PropsWithChildren<{}>) => {
           return data
         })(),
         (async () => {
-          const { data } = await axios.get("/station/coins.json", {
-            baseURL: ASSETS,
+          const { data } = await axios.get("/stationcoins.json", {
+            baseURL: STATION_CHAIN,
           })
           return data
         })(),

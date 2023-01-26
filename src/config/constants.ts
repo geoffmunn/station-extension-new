@@ -7,6 +7,8 @@ export const BRIDGE = "https://walletconnect.terra.dev"
 /* api */
 export const ASSETS = "https://assets.terra.money"
 export const STATION_ASSETS = "https://station-assets.terra.money"
+export const STATION_CHAIN =
+  "https://raw.githubusercontent.com/terra-grants/assets/main/"
 export const OBSERVER = "wss://observer.terra.dev"
 
 /* website */
