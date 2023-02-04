@@ -79,7 +79,7 @@
     "@types/react-modal": "^3.13.1",
     "@types/react-router-dom": "^5.3.3",
     "@types/secp256k1": "^4.0.3",
-    "@types/semver": "^7.3.9",
+    "@types/semver": "^7.3.13",
     "cross-env": "^7.0.3",
     "extension-port-stream": "^2.0.1",
     "extensionizer": "^1.0.1",
