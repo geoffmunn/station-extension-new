@@ -64,7 +64,7 @@
     "xss": "^1.0.14"
   },
   "devDependencies": {
-    "@emotion/react": "^11.9.0",
+    "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.8.1",
     "@types/crypto-js": "^4.1.1",
     "@types/jest": "^29.4.0",
