@@ -29,3 +29,10 @@ Builds the extension.
 Open `/build` to view it.
 
 > Note: For the Windows operating system, separate the paths by semicolons in the `.env` file.
+
+## Troubleshooting:
+If you get an error with the code 'ERR_OSSL_EVP_UNSUPPORTED', please refer to this solution: https://stackoverflow.com/questions/69692842/error-message-error0308010cdigital-envelope-routinesunsupported
+and run this command (OS X): 
+```
+export NODE_OPTIONS=--openssl-legacy-provider
+```
